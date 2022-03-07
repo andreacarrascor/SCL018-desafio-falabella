@@ -1,4 +1,4 @@
-const MyFavoritePeople = () => {
+const AsideMenu = () => {
     return ( 
         <>
             <nav className="border border-black h-563 w-80 ml-20 mt-5 mb-28">
@@ -16,4 +16,4 @@ const MyFavoritePeople = () => {
      );
 }
  
-export default MyFavoritePeople;
+export default AsideMenu;
