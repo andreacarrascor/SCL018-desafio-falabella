@@ -1,12 +1,10 @@
 import React from 'react';
+import { Route, Routes } from "react-router-dom";
+import Home from './components/Home';
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="">
-        <h1 className="text-purple-700 font-extrabold text-2xl">Desafío Falabella</h1>
-      </header>
-    </div>
+        <Home/>
   );
 }
 
