@@ -4,6 +4,7 @@ module.exports = {
   ],
   theme: {
     colors: {
+      db: '#fbfbfb',
       bd: "#333333",
       ft: "#E0E0E0",
       og: "#FF6200",
@@ -32,6 +33,7 @@ module.exports = {
 
       },
       width: {
+        '1280': '1280px',
         '939': '939px',
         '881': '881px',
         '90': '90px',
@@ -40,7 +42,8 @@ module.exports = {
       },
       margin: {
         '419': '419px',
-        '413': '413px'
+        '413': '413px',
+        '23': '23px'
       }
     },
   },
