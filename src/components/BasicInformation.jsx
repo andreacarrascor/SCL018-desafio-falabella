@@ -32,7 +32,7 @@ const BasicInformation = () => {
                         ))}
                         <label>Su fecha de nacimiento es:</label>
                         <input type="date" id="start" name="trip-start"
-                            value="2018-07-22"
+                            defaultValue="0000-00-00"
                             min="1900-01-01" max="2022-12-31"></input>
 
                     </div>
