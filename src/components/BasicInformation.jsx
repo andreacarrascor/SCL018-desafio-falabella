@@ -9,8 +9,8 @@ const BasicInformation = () => {
 
 
     return (
-        <main className="flex flex-col w-full mt-5 ml-5 mr-20">
-            <section className="border border-black w-full ml-5 mr-20">
+        <main className="profile flex flex-col  mt-5 ml-5 mr-20">
+            <section className="profile border border-black w-full ml-5 mr-20">
                 <h1 className="text-2xl">Mi persona favorita</h1>
                 <Link to="/" className="text-zinc-400 underline">Volver a personas favoritas</Link>
                 <div className="border border-black h-252 mt-5 ml-7 mb-5 mr-8">
