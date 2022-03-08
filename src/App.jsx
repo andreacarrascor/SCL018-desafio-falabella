@@ -10,8 +10,8 @@ const App = () => {
   return (
     <div className='container'>
       <HeaderPrimary/>
-      <nav className="nav shadow-bt h-12 xl:w-full"></nav>
-      <section className="welcome shadow-mp flex h-24 ml-20 mr-16 mt-6"></section>
+      <nav className="nav shadow-bt h-12 xl"></nav>
+      <section className="welcome shadow-mp flex xl h-24 ml-20 mr-20 mt-23"></section>
         <AsideMenu />
         <Routes>
           <Route path="/" element={<Profile />} />
