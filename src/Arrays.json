@@ -1,0 +1,55 @@
+{ "family": [
+    {
+        "id": 1,
+        "name": "MAMÁ"
+        },
+    {
+        "id": 2,
+        "name": "PAPÁ"
+    },
+    {
+        "id": 3,
+        "name": "HERMANA"
+    },
+    {
+        "id": 4,
+        "name": "HERMANO"
+    },
+    {
+        "id": 5,
+        "name": "HIJA"
+    },
+    {
+        "id": 6,
+        "name": "HIJO"
+    },
+    {
+        "id": 7,
+        "name": "POLOLA"
+    },
+    {
+        "id": 8,
+        "name": "POLOLO"
+    },
+    {
+        "id": 9,
+        "name": "OTRO, ¿CUÁL?"
+    }
+],
+
+  "sex": [
+    {
+        "id": 10,
+        "name": "MUJER"
+    },
+    {
+        "id": 11,
+        "name": "HOMBRE"
+    },
+    {
+        "id": 12,
+        "name": "OTRO"
+    }
+
+]
+}
