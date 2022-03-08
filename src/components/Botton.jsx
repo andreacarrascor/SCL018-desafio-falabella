@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-const Botton = ({informationFamily, informationSex}) =>{
-    const [select, setSelect] = useState(false);
+const Botton = ({informationFamily}) =>{
+    const [select, setSelect] = useState(0);
 
     const handleClick = (button) => {
         setSelect(button);
@@ -12,9 +12,9 @@ const Botton = ({informationFamily, informationSex}) =>{
             
                 <button className={`h-8 w-90 m-2 text-xs text-bd 
                 border border-ft rounded-lg 
-                focus:shadow-outline ${select === false ? "active:bg-og" : "" }`} key={item.id} 
+                focus:shadow-outline ${select === 0 ? "active:bg-og" : "" }`} key={item.id} 
                 
-                onClick={()=> handleClick(select)}>
+                onClick={()=> handleClick(0)}>
                     
                     {item.name} </button>
         ))}
