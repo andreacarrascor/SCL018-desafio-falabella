@@ -4,6 +4,9 @@ module.exports = {
   ],
   theme: {
     colors: {
+      bd: "#333333",
+      ft: "#E0E0E0",
+      og: "#FF6200"
       header: '#ff6200',
       search: '#495867',
     },
@@ -30,6 +33,8 @@ module.exports = {
       },
       width: {
         '939': '939px',
+        '881': '881px',
+        '90': '90px'
         '608': '608px',
         '881': '881px',
         '321': '321px',
