@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    font-family: lato;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 'header'
+                         'nav'
+                         'welcome'
+                         'aside'
+                         ;                  
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.welcome {
+    grid-area: welcome;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.profile {
+    grid-area: profile;
+}
+
+@media only screen and (min-width: 640px){
+    .container {
+        display: grid;
+        grid-template-areas: 'header header header'
+                             'nav nav nav'
+                             'welcome welcome welcome'
+                             'aside profile profile'
+                             ;
+        grid-template-columns: 1fr 1fr 1fr;                   
+    }
+}
