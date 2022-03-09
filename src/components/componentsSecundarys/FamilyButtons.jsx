@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Button = ({ informationFamily }) => {
+const FamilyButtons = ({ familyData }) => {
   const [select, setSelect] = useState();
 console.log(select)
   const handleClick = (button) => {
@@ -8,10 +8,10 @@ console.log(select)
   };
   return (
     <div className="flex flex-row flex-wrap">
-      {informationFamily.map((item) => (
+      {familyData.map((item) => (
         <button
           className={`h-8 w-90 m-2 text-xs text-bd 
-                border border-ft rounded-lg 
+                border border-ft rounded-xs
                 focus:shadow-outline ${Number(select) === item.id ? "highlight" : ""}`}
           key={item.id}
           onClick={() => handleClick(item.id)}
@@ -23,4 +23,4 @@ console.log(select)
   );
 };
 
-export default Button;
+export default FamilyButtons;

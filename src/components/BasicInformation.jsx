@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import AddEvent from "./AddEvent";
 import data from "../Arrays.json";
-import Button from "./componentsSecundarys/Button";
+import FamilyButtons from "./componentsSecundarys/FamilyButtons";
 import { Context } from "../context/Context";
 import { useContext } from "react";
 import ButtonSendProfile from "./componentsSecundarys/ButtonSendProfile";
 
 const BasicInformation = () => {
   const globalContext = useContext(Context);
-  const informationFamily = data.family;
-  const informationSex = data.sex;
+  const familyData = data.family;
+  const sexData = data.sex;
 
   //Función para capturar el nombre
   const onChange = (e) => {
@@ -25,7 +25,7 @@ const BasicInformation = () => {
         <Link to="/" className="text-fp underline ml-6">Volver a personas favoritas</Link>
         <div className="bg-db h-252 mt-5 ml-7 mb-5 mr-8">
           <h2>Datos básicos</h2>
-          <label htmlFor="name">Su nombre es </label>
+          <label htmlFor="name" className="whitespace-pre">Su nombre es   </label>
           <input
             type="text"
             placeholder="Escriba su nombre"
@@ -35,13 +35,12 @@ const BasicInformation = () => {
           ></input>
           <p>Es mi {globalContext.favoritePerson}</p>
 
-          <Button
-            informationFamily={informationFamily}
-            informationSex={informationSex}
+          <FamilyButtons
+            familyData={familyData}
           />
           <p>Sexo</p>
           <div className="flex flex-row flex-wrap">
-            {informationSex.map((item) => (
+            {sexData.map((item) => (
               <button
                 className="h-8 w-90 m-2 text-xs text-bd 
                             border border-ft rounded-lg 

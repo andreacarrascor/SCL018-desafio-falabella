@@ -3,6 +3,7 @@ import { useContext } from "react";
 
 const ButtonSendProfile = () => {
   const globalContext = useContext(Context);
+  console.log(globalContext)
 
   //Alerta para completar campo del nombre
   const sendProfile = () => {

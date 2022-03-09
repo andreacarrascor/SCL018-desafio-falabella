@@ -11,14 +11,16 @@ module.exports = {
       header: '#ff6200',
       search: '#495867',
       gc: '#68717D',
-      white: '#FFFFFF;'
+      white: '#FFFFFF',
       bl: '#FF9501',
       sl: '#F8FAFC',
-      fp: '#68717D'
+      fp: '#68717D',
+      sb: '#FBF3EE'
     },
     borderRadius: {
       'sr' : '35px',
-      '3xl': '24px'
+      '3xl': '24px',
+      'xs': '4px'
     },
     extend: {
       fontFamily: {

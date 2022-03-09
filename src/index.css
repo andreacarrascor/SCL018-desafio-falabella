@@ -49,6 +49,6 @@
 }
 
 .highlight{
-    border: 2px solid orangered;
-    background-color: rgba(252, 131, 87, 0.281);
+    border: 1px solid #ff6200;
+    background-color: #FBF3EE;
 }
