@@ -10,9 +10,15 @@ module.exports = {
       og: "#FF6200",
       header: '#ff6200',
       search: '#495867',
+      gc: '#68717D',
+      white: '#FFFFFF;'
+      bl: '#FF9501',
+      sl: '#F8FAFC',
+      fp: '#68717D'
     },
     borderRadius: {
       'sr' : '35px',
+      '3xl': '24px'
     },
     extend: {
       fontFamily: {
@@ -39,6 +45,8 @@ module.exports = {
         '90': '90px',
         '608': '608px',
         '321': '321px',
+        '295': '295px',
+        '243': '243px'
       },
       margin: {
         '419': '419px',

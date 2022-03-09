@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Botton = ({informationFamily}) =>{
+const FamilyInformationButton = ({familyInformation}) =>{
     const [select, setSelect] = useState(0);
 
     const handleClick = (button) => {
@@ -8,7 +8,7 @@ const Botton = ({informationFamily}) =>{
     }
     return (
         <div className="flex flex-row flex-wrap">
-        {informationFamily.map((item) =>(
+        {familyInformation.map((item) =>(
             
                 <button className={`h-8 w-90 m-2 text-xs text-bd 
                 border border-ft rounded-lg 
@@ -22,4 +22,4 @@ const Botton = ({informationFamily}) =>{
     )
 }
 
-export default Botton;
+export default FamilyInformationButton;

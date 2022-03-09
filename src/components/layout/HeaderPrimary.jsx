@@ -1,25 +1,23 @@
-import bg_logo from '../../img/bg_logo.png'
 import logo_f from '../../img/logo_f.png'
-import logo_searcher from '../../img/logo_searcher.png'
+import searcher from '../../img/searcher.png'
+import menu from '../../img/menu.png'
+import cart from '../../img/cart.png'
+
 
 const HeaderPrimary = () => {
     return (
-        <header className="flex items-center w-screen header h-70 xl bg-header">
-            <figure className='absolute'>
-                <img src={bg_logo} width="243" height="70" alt="background logo" />
-            </figure>
-            <figure className='absolute top-5 left-8'>
-                <img src={logo_f} width="191" height="30" alt="logo f.com" />
-            </figure>
-            <div className='flex flex-row border border-black'>
-                <input
-                    type='search'
-                    className='rounded-sr w-608 h-46 my-3 ml-419 mr-413'
-                    placeholder='¿Qué buscas?'
-                />
-                <button className='bg-search '>
-                    <img src={logo_searcher} width="23.75" height="23" alt="logo searcher" />
-                </button>
+        <header className="flex justify-between items-center header w-screen h-70 bg-header">
+            <div className=''>
+                <img src={logo_f} width="243" height="70" alt="logo f.com" />
+            </div>
+            <div className=''>
+                <img src={menu} width="110" height="48" alt="menu header" />
+            </div>
+            <div className=''>
+                <img src={searcher} width="608" height="46" alt="searcher input" />
+            </div>
+            <div className=''>
+                <img src={cart} width="338" height="52" alt="menu header" />
             </div>
         </header>
     );
