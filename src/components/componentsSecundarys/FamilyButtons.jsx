@@ -1,7 +1,7 @@
 import {useContext } from "react";
 import { Context } from "../../context/Context";
 
-const Button = ({ informationFamily }) => {
+const FamilyButtons = ({ familyData }) => {
   
   const globalContext = useContext(Context);
 
@@ -12,7 +12,7 @@ const Button = ({ informationFamily }) => {
 
   return (
     <div className="flex flex-row flex-wrap">
-      {informationFamily.map((item) => (
+      {familyData.map((item) => (
         <button
           className={`h-8 w-90 m-2 text-xs text-bd 
                 border border-ft rounded-lg 
@@ -27,4 +27,4 @@ const Button = ({ informationFamily }) => {
   );
 };
 
-export default Button;
+export default FamilyButtons;

@@ -7,6 +7,7 @@ import BasicInformation from './components/BasicInformation';
 import HeaderPrimary from './components/layout/HeaderPrimary';
 import HeaderSecondary from './components/layout/HeaderSecondary';
 import MenuProfile from './components/layout/MenuProfile';
+import Events from './components/Events';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/" element={<Profile />} />
           <Route path="/basicInformation" element={<BasicInformation />} />
           <Route path="/addEvent" element={<AddEvent />} />
+          <Route path="/event" element={<Events/>} />
         </Routes>
     </div>
   );

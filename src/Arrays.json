@@ -51,5 +51,75 @@
         "name": "OTRO"
     }
 
+],
+
+"events": [
+    {
+        "id": 13,
+        "name": "Cumpleaños"
+        },
+    {
+        "id": 14,
+        "name": "Aniversario"
+    },
+    {
+        "id": 15,
+        "name": "Navidad"
+    },
+    {
+        "id": 16,
+        "name": "Vacaciones"
+    },
+    {
+        "id": 17,
+        "name": "18 de Sept."
+    },
+    {
+        "id": 18,
+        "name": "Fecha Especial"
+    }
+],
+
+  "interests": [
+    {
+        "id": 19,
+        "name": "ROPA"
+    },
+    {
+        "id": 20,
+        "name": "PERFUMES"
+    },
+    {
+        "id": 21,
+        "name": "ZAPATILLAS"
+    },
+    {
+        "id": 22,
+        "name": "JUGUETES"
+    },
+    {
+        "id": 23,
+        "name": "TECNOLOGIA"
+    },
+    {
+        "id": 24,
+        "name": "LIVING"
+    },
+    {
+        "id": 25,
+        "name": "ACCESORIOS"
+    },
+    {
+        "id": 26,
+        "name": "ARTÍCULOS DE BELLEZA"
+    },
+    {
+        "id": 27,
+        "name": "DECOHOGAR"
+    },
+    {
+        "id": 28,
+        "name": "OTRA, ¿CUÁL?"
+    }
 ]
 }
