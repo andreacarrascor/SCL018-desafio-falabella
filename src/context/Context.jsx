@@ -11,12 +11,24 @@ const Provider = ({children}) => {
     //Estado global para capturar el nombre de la persona favorita
     const [favoritePerson, setFavoritePerson] = useState("");
 
+    //Estado global para capturar el valor del boton del parentesco
+    const [selectFamily, setSelectFamily] = useState();
+
+    //Estado global para capturar el valor del boton del sexo
+    const [selectSex, setSelectSex] = useState()
+
+    //Estado global para guardar la fecha de nacimiento
+    const [selectDate, setSelectDate] = useState()
+
     //Función para guardar el nuevo perfil en la base de datos
     const newProfile = async () =>{
-        try{
+        try{ 
             await addDoc(collection(db, "Users"),
             {
                 name: favoritePerson,
+                family: selectFamily,
+                sex: selectSex,
+                date: selectDate
 
             });
         } catch(error){
@@ -28,7 +40,13 @@ const Provider = ({children}) => {
     const props = {
         favoritePerson,
         setFavoritePerson,
-        newProfile
+        newProfile,
+        selectFamily, 
+        setSelectFamily,
+        selectSex, 
+        setSelectSex,
+        selectDate, 
+        setSelectDate
     };
 
     return <Context.Provider value={props}>{children}</Context.Provider>

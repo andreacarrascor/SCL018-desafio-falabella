@@ -1,22 +1,26 @@
-import { useState } from "react";
+import {useContext } from "react";
+import { Context } from "../../context/Context";
 
 const FamilyButtons = ({ familyData }) => {
-  const [select, setSelect] = useState();
-console.log(select)
+  
+  const globalContext = useContext(Context);
+
   const handleClick = (button) => {
-    setSelect(button);
+    globalContext.setSelectFamily(button);
   };
+
+
   return (
     <div className="flex flex-row flex-wrap">
       {familyData.map((item) => (
         <button
           className={`h-8 w-90 m-2 text-xs text-bd 
-                border border-ft rounded-xs
-                focus:shadow-outline ${Number(select) === item.id ? "highlight" : ""}`}
+                border border-ft rounded-xs 
+                focus:shadow-outline ${globalContext.selectFamily === item.name ? "highlight" : ""}`}
           key={item.id}
-          onClick={() => handleClick(item.id)}
+          onClick={() => handleClick(item.name)}
         >
-          {item.name}{" "}
+          {item.name}
         </button>
       ))}
     </div>
