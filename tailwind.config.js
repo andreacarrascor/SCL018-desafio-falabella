@@ -16,10 +16,13 @@ module.exports = {
       sl: '#F8FAFC',
       fp: '#68717D',
       ev: '#495867'
+      sb: '#FBF3EE'
+
     },
     borderRadius: {
       'sr' : '35px',
-      '3xl': '24px'
+      '3xl': '24px',
+      'xs': '4px'
     },
     extend: {
       fontFamily: {
