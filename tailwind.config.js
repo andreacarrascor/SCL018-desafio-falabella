@@ -10,6 +10,8 @@ module.exports = {
       og: "#FF6200",
       header: '#ff6200',
       search: '#495867',
+      gc: '#68717D',
+      white: '#FFFFFF;'
     },
     borderRadius: {
       'sr' : '35px',
