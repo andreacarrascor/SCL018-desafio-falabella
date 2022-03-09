@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
-import AsideMenu from './components/AsideMenu';
+import AsideMenu from './components/layout/AsideMenu';
 import Profile from './components/Profile';
 import AddEvent from './components/AddEvent';
 import BasicInformation from './components/BasicInformation';

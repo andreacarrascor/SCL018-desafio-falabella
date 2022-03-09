@@ -1,4 +1,4 @@
-import personal_info from '../img/aside_icons/personal_info.png'
+// import personal_info from '../img/aside_icons/personal_info.png'
 
 const AsideMenu = () => {
     return (
