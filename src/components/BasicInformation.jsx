@@ -5,15 +5,20 @@ import Button from "./componentsSecundarys/Button";
 import { Context } from "../context/Context";
 import { useContext } from "react";
 import ButtonSendProfile from "./componentsSecundarys/ButtonSendProfile";
+import SexButtons from "./componentsSecundarys/SexButtons";
+import Date from "./componentsSecundarys/Date";
 
 const BasicInformation = () => {
   const globalContext = useContext(Context);
   const informationFamily = data.family;
   const informationSex = data.sex;
 
+
+
   //Función para capturar el nombre
   const onChange = (e) => {
-    if (e.target.name === "name") {
+    const regex = /^[a-zA-Z]*$/;
+    if (e.target.name === "name" && regex.test(e.target.value)) {
       globalContext.setFavoritePerson(e.target.value);
     }
   };
@@ -33,34 +38,17 @@ const BasicInformation = () => {
             value={globalContext.favoritePerson}
             onChange={onChange}
           ></input>
-          <p>Es mi {globalContext.favoritePerson}</p>
+          <p>Es mi</p>
 
           <Button
             informationFamily={informationFamily}
             informationSex={informationSex}
           />
           <p>Sexo</p>
-          <div className="flex flex-row flex-wrap">
-            {informationSex.map((item) => (
-              <button
-                className="h-8 w-90 m-2 text-xs text-bd 
-                            border border-ft rounded-lg 
-                            focus:shadow-outlin"
-                key={item.id}
-              >
-                {item.name}{" "}
-              </button>
-            ))}
+            <SexButtons 
+              sexInformation={informationSex}/>
             <label>Fecha de nacimiento:</label>
-            <input
-              type="date"
-              id="start"
-              name="trip-start"
-              defaultValue="0000-00-00"
-              min="1900-01-01"
-              max="2022-12-31"
-            ></input>
-          </div>
+          <Date />
         </div>
       </section>
       <AddEvent />
