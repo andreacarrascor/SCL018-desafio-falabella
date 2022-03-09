@@ -8,7 +8,7 @@ const HeaderSecondary = () => {
                 <img src={geofinder} width="203" height="40" alt="geofinder" />
             </div>
             <div>
-                <img src={links} width="393" height="17" alt="geofinder" />
+                <img src={links} width="393" height="17" alt="links aux" />
             </div>
         </nav>
     );

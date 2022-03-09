@@ -18,7 +18,7 @@ const Provider = ({children}) => {
     const [selectSex, setSelectSex] = useState("")
 
     //Estado global para guardar la fecha de nacimiento
-    const [selectDate, setSelectDate] = useState("")
+    const [selectDate, setSelectDate] = useState("");
 
     //Estado global para cambiar el estado del form de evento
     const [state, setState] = useState(false)
