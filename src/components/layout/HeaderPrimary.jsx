@@ -4,7 +4,7 @@ import logo_searcher from '../../img/logo_searcher.png'
 
 const HeaderPrimary = () => {
     return (
-        <header className="flex items-center header h-70 xl bg-header">
+        <header className="flex items-center w-screen header h-70 xl bg-header">
             <figure className='absolute'>
                 <img src={bg_logo} width="243" height="70" alt="background logo" />
             </figure>
