@@ -4,6 +4,7 @@
 
 * {
     font-family: lato;
+    box-sizing: border-box;
 }
 
 .container {
@@ -35,7 +36,7 @@
     grid-area: profile;
 }
 
-@media only screen and (min-width: 640px){
+@media (min-width: 1280px) {
     .container {
         display: grid;
         grid-template-areas: 'header header header'
@@ -45,4 +46,9 @@
                              ;
         grid-template-columns: 1fr 1fr 1fr;                   
     }
+}
+
+.highlight{
+    border: 2px solid orangered;
+    background-color: rgba(252, 131, 87, 0.281);
 }
