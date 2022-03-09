@@ -47,3 +47,8 @@
         grid-template-columns: 1fr 1fr 1fr;                   
     }
 }
+
+.highlight{
+    border: 2px solid orangered;
+    background-color: rgba(252, 131, 87, 0.281);
+}

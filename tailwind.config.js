@@ -10,6 +10,8 @@ module.exports = {
       og: "#FF6200",
       header: '#ff6200',
       search: '#495867',
+      gc: '#68717D',
+      white: '#FFFFFF;'
       bl: '#FF9501',
       sl: '#F8FAFC',
       fp: '#68717D'
