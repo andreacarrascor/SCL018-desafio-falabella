@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import AddEvent from "./AddEvent";
 import data from "../Arrays.json";
-import FamilyButtons from "./componentsSecundarys/FamilyButtons";
+import FamilyButtons from "./secondary_components/FamilyButtons";
 import { Context } from "../context/Context";
 import { useContext } from "react";
-import ButtonSendProfile from "./componentsSecundarys/ButtonSendProfile";
-import SexButtons from "./componentsSecundarys/SexButtons";
-import Date from "./componentsSecundarys/Date";
+import ButtonSendProfile from "./secondary_components/ButtonSendProfile";
+import SexButtons from "./secondary_components/SexButtons";
+import Date from "./secondary_components/Date";
 
 const BasicInformation = () => {
   const globalContext = useContext(Context);

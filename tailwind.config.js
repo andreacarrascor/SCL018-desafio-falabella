@@ -15,7 +15,7 @@ module.exports = {
       bl: '#FF9501',
       sl: '#F8FAFC',
       fp: '#68717D',
-      ev: '#495867'
+      ev: '#495867',
       sb: '#FBF3EE'
 
     },
