@@ -1,5 +1,6 @@
 import aside_menu from '../../img/aside_menu.png'
 
+
 const AsideMenu = () => {
     return (
         <nav className="aside rounded h-563 w-321 ml-20 mt-5 mb-28">

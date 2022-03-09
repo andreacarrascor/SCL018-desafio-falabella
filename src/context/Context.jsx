@@ -20,6 +20,19 @@ const Provider = ({children}) => {
     //Estado global para guardar la fecha de nacimiento
     const [selectDate, setSelectDate] = useState("");
 
+    //Estado global para cambiar el estado del form de evento
+    const [state, setState] = useState(false)
+
+    //Funcion para cambiar el estado y mostrar el form de evento
+    const clickAddEvent = () =>{
+        if(!state)
+        {
+        setState(true)
+        return;
+        }setState(false)        
+    }
+
+
     //Función para guardar el nuevo perfil en la base de datos
     const newProfile = async () =>{
         try{ 
@@ -46,7 +59,10 @@ const Provider = ({children}) => {
         selectSex, 
         setSelectSex,
         selectDate, 
-        setSelectDate
+        setSelectDate,
+        state, 
+        setState,
+        clickAddEvent
     };
 
     return <Context.Provider value={props}>{children}</Context.Provider>
