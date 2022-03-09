@@ -7,17 +7,16 @@ import { useContext } from "react";
 import ButtonSendProfile from "./secondary_components/ButtonSendProfile";
 import SexButtons from "./secondary_components/SexButtons";
 import Date from "./secondary_components/Date";
+import Events from "./Events";
 
 const BasicInformation = () => {
   const globalContext = useContext(Context);
   const familyData = data.family;
   const sexData = data.sex;
 
-
-
   //Función para capturar el nombre
   const onChange = (e) => {
-    const regex = /^[a-zA-Z]*$/;
+    const regex = /^[a-zA-Z\s]*$/;
     if (e.target.name === "name" && regex.test(e.target.value)) {
       globalContext.setFavoritePerson(e.target.value);
     }
@@ -50,7 +49,9 @@ const BasicInformation = () => {
           <Date />
         </div>
       </section>
-      <AddEvent />
+      <section>
+        {globalContext.state ? <Events /> : <AddEvent />}
+      </section>
       <ButtonSendProfile />
     </main>
   );
