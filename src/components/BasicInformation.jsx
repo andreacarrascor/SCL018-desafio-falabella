@@ -14,6 +14,7 @@ const BasicInformation = () => {
   const familyData = data.family;
   const sexData = data.sex;
 
+
   //Función para capturar el nombre
   const onChange = (e) => {
     const regex = /^[a-zA-Z\s]*$/;

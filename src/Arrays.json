@@ -56,27 +56,33 @@
 "events": [
     {
         "id": 13,
-        "name": "Cumpleaños"
+        "name": "Cumpleaños",
+        "img": "https://user-images.githubusercontent.com/89402238/157529891-834b8679-f486-4bb5-8f48-642381852efa.png"
         },
     {
         "id": 14,
-        "name": "Aniversario"
+        "name": "Aniversario",
+        "img": "https://user-images.githubusercontent.com/89402238/157529825-1d971fef-efde-4738-b6dd-e797813049a6.png"
     },
     {
         "id": 15,
-        "name": "Navidad"
+        "name": "Navidad",
+        "img": "https://user-images.githubusercontent.com/89402238/157529959-8000c0ea-c4ba-493e-b58b-781f3a9fa1bf.png"
     },
     {
         "id": 16,
-        "name": "Vacaciones"
+        "name": "Vacaciones",
+        "img": "Vector-vacaciones](https://user-images.githubusercontent.com/89402238/157530014-b3caa9d3-7b7d-4d92-8ab4-24f1b4d99074.png"
     },
     {
         "id": 17,
-        "name": "18 de Sept."
+        "name": "18 de Sept.",
+        "img": "https://github.com/Maferamosp/SCL018-desafio-falabella/blob/dev/Vector-18sep.png"
     },
     {
         "id": 18,
-        "name": "Fecha Especial"
+        "name": "Fecha Especial",
+        "img": "Vector-fecha-especial](https://user-images.githubusercontent.com/89402238/157530108-c62931e9-24af-4a81-a024-aa11001c6210.png"
     }
 ],
 
