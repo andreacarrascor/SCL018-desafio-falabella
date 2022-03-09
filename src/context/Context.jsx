@@ -18,7 +18,7 @@ const Provider = ({children}) => {
     const [selectSex, setSelectSex] = useState("")
 
     //Estado global para guardar la fecha de nacimiento
-    const [selectDate, setSelectDate] = useState("")
+    const [selectDate, setSelectDate] = useState("");
 
     //Función para guardar el nuevo perfil en la base de datos
     const newProfile = async () =>{
