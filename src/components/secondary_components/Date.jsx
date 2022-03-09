@@ -17,12 +17,12 @@ const Date = () => {
         id="start"
         name="trip-start"
         value={globalContext.selectDate}
-        defaultValue="yyyy-mm-dd"
+        // defaultValue="yyyy-mm-dd"
         min="1900-01-01"
         max="2022-12-31"
         onChange={onChange}
       ></input>
-     );
+    );
 }
- 
+
 export default Date;

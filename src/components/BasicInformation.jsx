@@ -13,11 +13,9 @@ const BasicInformation = () => {
   const familyData = data.family;
   const sexData = data.sex;
 
-
-
   //Función para capturar el nombre
   const onChange = (e) => {
-    const regex = /^[a-zA-Z]*$/;
+    const regex = /^[a-zA-Z\s]*$/;
     if (e.target.name === "name" && regex.test(e.target.value)) {
       globalContext.setFavoritePerson(e.target.value);
     }

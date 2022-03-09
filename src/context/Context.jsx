@@ -12,13 +12,13 @@ const Provider = ({children}) => {
     const [favoritePerson, setFavoritePerson] = useState("");
 
     //Estado global para capturar el valor del boton del parentesco
-    const [selectFamily, setSelectFamily] = useState();
+    const [selectFamily, setSelectFamily] = useState("");
 
     //Estado global para capturar el valor del boton del sexo
-    const [selectSex, setSelectSex] = useState()
+    const [selectSex, setSelectSex] = useState("")
 
     //Estado global para guardar la fecha de nacimiento
-    const [selectDate, setSelectDate] = useState()
+    const [selectDate, setSelectDate] = useState("")
 
     //Función para guardar el nuevo perfil en la base de datos
     const newProfile = async () =>{
