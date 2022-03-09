@@ -22,15 +22,13 @@ const BasicInformation = () => {
     <main className="profile flex flex-col w-939 mt-5 mr-20">
       <section className="shadow-am w-full  mr-20">
         <h1 className="text-2xl mt-6 ml-6">Mi persona favorita</h1>
-        <Link to="/" className="underline ml-6">
-          Volver a personas favoritas
-        </Link>
+        <Link to="/" className="text-fp underline ml-6">Volver a personas favoritas</Link>
         <div className="bg-db h-252 mt-5 ml-7 mb-5 mr-8">
           <h2>Datos básicos</h2>
           <label htmlFor="name">Su nombre es </label>
           <input
             type="text"
-            placeholder="Escribe su Nombre"
+            placeholder="Escriba su nombre"
             name="name"
             value={globalContext.favoritePerson}
             onChange={onChange}
@@ -41,7 +39,6 @@ const BasicInformation = () => {
             informationFamily={informationFamily}
             informationSex={informationSex}
           />
-
           <p>Sexo</p>
           <div className="flex flex-row flex-wrap">
             {informationSex.map((item) => (
@@ -54,7 +51,7 @@ const BasicInformation = () => {
                 {item.name}{" "}
               </button>
             ))}
-            <label>Su fecha de nacimiento es:</label>
+            <label>Fecha de nacimiento:</label>
             <input
               type="date"
               id="start"

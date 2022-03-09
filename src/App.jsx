@@ -5,13 +5,15 @@ import Profile from './components/Profile';
 import AddEvent from './components/AddEvent';
 import BasicInformation from './components/BasicInformation';
 import HeaderPrimary from './components/layout/HeaderPrimary';
+import HeaderSecondary from './components/layout/HeaderSecondary';
+import MenuProfile from './components/layout/MenuProfile';
 
 const App = () => {
   return (
     <div className='container'>
       <HeaderPrimary/>
-      <nav className="nav shadow-bt h-12 xl"></nav>
-      <section className="welcome shadow-mp flex xl h-24 ml-20 mr-20 mt-23"></section>
+      <HeaderSecondary/>
+      <MenuProfile/>
         <AsideMenu />
         <Routes>
           <Route path="/" element={<Profile />} />
