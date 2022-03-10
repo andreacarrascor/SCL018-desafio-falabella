@@ -59,7 +59,10 @@ const BasicInformation = () => {
 				</div>
 			</section>
 			<section>
-				{globalContext.state ? <Events /> : <AddEvent />}
+				{globalContext.state ? <Events 
+        eventsData={eventsData} 
+        interestsData={interestsData}
+        suggestionData={suggestionData}/> : <AddEvent />}
 			</section>
 			<ButtonSendProfile />
 		</main>
