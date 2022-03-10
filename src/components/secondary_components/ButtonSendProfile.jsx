@@ -71,7 +71,7 @@ const ButtonSendProfile = () => {
   };
 
   return (
-    <section className="flex flex-row justify-end items-center shadow-am h-24 mt-4">
+    <section className="flex flex-row justify-end items-center shadow-am h-24 mt-4 mb-5">
       <button className=" underline text-gc" onClick={() => deleteForm()}>
         Cancelar
       </button>

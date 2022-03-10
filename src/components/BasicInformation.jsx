@@ -53,7 +53,7 @@ const BasicInformation = () => {
 					<p className="ml-6">Sexo</p>
 					<div className="flex flex-row items-center mt-1 ml-6">
 						<SexButtons sexInformation={sexData} />
-						<label className="whitespace-pre ml-6">Fecha de nacimiento:   </label>
+						<label className="whitespace-pre ml-10">Fecha de nacimiento:   </label>
 						<Date />
 					</div>
 				</div>
