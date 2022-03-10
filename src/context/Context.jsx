@@ -23,6 +23,15 @@ const Provider = ({children}) => {
     //Estado global para cambiar el estado del form de evento
     const [state, setState] = useState(false)
 
+    //estado global que cambia el boton de evento
+    const [events, setEvents] = useState("");
+
+    //estado global que cambia el boton de intereses
+    const [interests, setInterests] = useState("")
+
+    //estado global para el boton de sugerencias
+    const [suggestion, setSuggestion] = useState("");
+
     //Funcion para cambiar el estado y mostrar el form de evento
     const clickAddEvent = () =>{
         if(!state)
@@ -62,7 +71,11 @@ const Provider = ({children}) => {
         setSelectDate,
         state, 
         setState,
-        clickAddEvent
+        clickAddEvent,
+        interests, setInterests,
+        events, setEvents,
+        suggestion, setSuggestion
+
     };
 
     return <Context.Provider value={props}>{children}</Context.Provider>

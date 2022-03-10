@@ -10,10 +10,14 @@ import Date from "./secondary_components/Date";
 import Events from "./Events";
 import fav_people from '../img/icons/fav_people.png'
 
+
 const BasicInformation = () => {
   const globalContext = useContext(Context);
   const familyData = data.family;
   const sexData = data.sex;
+  const eventsData = data.events;
+  const interestsData = data.interests;
+  const suggestionData = data.suggestion;
 
 
   //Función para capturar el nombre
@@ -54,7 +58,10 @@ const BasicInformation = () => {
         </div>
       </section>
       <section>
-        {globalContext.state ? <Events /> : <AddEvent />}
+        {globalContext.state ? 
+        <Events eventsData={eventsData}
+        interestsData={interestsData} 
+        suggestionData={suggestionData}/> : <AddEvent />}
       </section>
       <ButtonSendProfile />
     </main>

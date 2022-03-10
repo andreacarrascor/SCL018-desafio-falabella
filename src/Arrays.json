@@ -72,17 +72,17 @@
     {
         "id": 16,
         "name": "Vacaciones",
-        "img": "Vector-vacaciones](https://user-images.githubusercontent.com/89402238/157530014-b3caa9d3-7b7d-4d92-8ab4-24f1b4d99074.png"
+        "img": "https://user-images.githubusercontent.com/89402238/157530014-b3caa9d3-7b7d-4d92-8ab4-24f1b4d99074.png"
     },
     {
         "id": 17,
         "name": "18 de Sept.",
-        "img": "https://github.com/Maferamosp/SCL018-desafio-falabella/blob/dev/Vector-18sep.png"
+        "img": "https://user-images.githubusercontent.com/89402238/157553760-06bb924d-0866-4de4-b89c-2345f50529c8.png"
     },
     {
         "id": 18,
         "name": "Fecha Especial",
-        "img": "Vector-fecha-especial](https://user-images.githubusercontent.com/89402238/157530108-c62931e9-24af-4a81-a024-aa11001c6210.png"
+        "img": "https://user-images.githubusercontent.com/89402238/157530108-c62931e9-24af-4a81-a024-aa11001c6210.png"
     }
 ],
 
@@ -126,6 +126,20 @@
     {
         "id": 28,
         "name": "OTRA, ¿CUÁL?"
+    }
+],
+"suggestion": [
+    {
+        "id": 29,
+        "name": "15 días antes"
+    },
+    {
+        "id": 30,
+        "name": "20 días antes"
+    },
+    {
+        "id": 31,
+        "name": "1 mes antes"
     }
 ]
 }
