@@ -27,27 +27,27 @@ const ProfileList = () => {
       <h2 className="text text-xl ml-8 mb-3 text-bd">
         Revisa los eventos que tienen:
       </h2>
-      <div className="flex flex-row w-873 items-center mb-2 mx-auto">
+      {/* <div className="flex flex-row w-873 items-center mb-2 mx-auto">
         <input 
             type="checkbox" 
             name="controlled"
             className="ml ml-3 mr-3 w-5 h-5 rounded-xs"
         ></input>
         <label className="text text-sm text-rg">Seleccionar todo</label>
-      </div>
+      </div> */}
       {users.map((item) => (
         <section className="flex flex-row border border-bc w-873 h-20  mx-auto items-center mb-2">
-          <input 
+          {/* <input 
             type="checkbox" 
             name="controlled"
             className="ml ml-3 mr-3 w-5 h-5 rounded-xs"
-          ></input>
+          ></input> */}
           <div
             key={item.id}
             className="flex flex-row justify-between items-center w-810"
           >
-            <div>
-              <p className="tex text-sm font-bold text-bd">{item.name}</p>
+            <div className="ml-4">
+              <p className=" tex text-sm font-bold text-bd">{item.name}</p>
               <p className="tex text-sm text-gd">{item.events}</p>
             </div>
             <DeleteButton 

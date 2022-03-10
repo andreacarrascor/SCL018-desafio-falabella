@@ -27,7 +27,7 @@ const Provider = ({children}) => {
     const [events, setEvents] = useState("");
 
     //estado global que captura el valor de los intereses
-    const [interests, setInterests] = useState("")
+    const [interests, setInterests] = useState([])
 
     //estado global que captura el valor de sugerencias
     const [suggestion, setSuggestion] = useState("");
