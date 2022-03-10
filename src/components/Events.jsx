@@ -10,7 +10,14 @@ const Events = ({ eventsData, interestsData, suggestionData }) => {
         globalContext.setEvents(button);
     };
     const handleClickB = (button) => {
-        globalContext.setInterests(button);
+        if (globalContext.interests.includes(button)) {
+            const newInterests = globalContext.interests.filter(interest => interest !== button )
+            globalContext.setInterests(newInterests);
+        } else {
+            globalContext.setInterests([...globalContext.interests, button])
+        }
+        
+        
     };
 
     const handleClickC = (button) => {
@@ -65,7 +72,7 @@ const Events = ({ eventsData, interestsData, suggestionData }) => {
                         {interestsData.map((item) => (
                             <button className={`h-8 w-auto p-2 m-1 ml-4 text-xs text-bd 
                             border border-ft rounded-xs 
-                            focus:shadow-outline ${globalContext.interests === item.name ? "highlight" : ""}`}
+                            focus:shadow-outline ${globalContext.interests.includes(item.name) ? "highlight" : ""}`}
                                 key={item.id} onClick={() => handleClickB(item.name)}>
                                 {item.name}
                             </button>
@@ -82,9 +89,9 @@ const Events = ({ eventsData, interestsData, suggestionData }) => {
                             </button>
                         ))}
                     </div>
-                    <section className='flex justify-end mr-5'>
-                        <button className=" underline text-gc" onClick={() => deleteForm()}>Cancelar</button>
-                        <button className="rounded rounded-sr h-9 w-48 text-sl ml-8 bg-ev">Agregar evento</button>
+                    <section className='flex justify-end'>
+                    {/* <button className=" underline text-gc" onClick={() => deleteForm()}>Cancelar</button>
+                    <button className="rounded rounded-sr h-10 w-48 text-sl ml-8 bg-ev">Agregar evento</button> */}
                     </section>
                 </div>
             </section>
