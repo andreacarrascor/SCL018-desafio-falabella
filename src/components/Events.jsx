@@ -2,31 +2,29 @@ import Union from '../img/Union.png'
 import { Context } from "../context/Context";
 import { useContext } from "react";
 
-const Events = ({eventsData, interestsData, suggestionData}) => {
+const Events = ({ eventsData, interestsData, suggestionData }) => {
     const globalContext = useContext(Context);
 
     const handleClick = (button) => {
         globalContext.setEvents(button);
-      };
-      const handleClickB = (button) => {
+    };
+    const handleClickB = (button) => {
         globalContext.setInterests(button);
-      };
+    };
 
-      const handleClickC = (button) => {
+    const handleClickC = (button) => {
         globalContext.setSuggestion(button);
-      };
+    };
 
-      
-      const deleteForm = () => {
-        if (window.confirm("¿Desea borrar los campos?")) {  
-         globalContext.setEvents("");
-         globalContext.setInterests("");
-         globalContext.setSuggestion("");
-       }
-  };
+    const deleteForm = () => {
+        if (window.confirm("¿Desea borrar los campos?")) {
+            globalContext.setEvents("");
+            globalContext.setInterests("");
+            globalContext.setSuggestion("");
+        }
+    };
 
-
-    return ( 
+    return (
         <main>
             <section className='shadow-am w-full h-504 mr-20'>
                 <h1 className="text-2xl mt-6 ml-8 pb-2">Eventos e intereses</h1>
@@ -54,8 +52,8 @@ const Events = ({eventsData, interestsData, suggestionData}) => {
                             <button className={`h-10 w-28 m-2 text-xs text-bd 
                             border border-ft rounded-xs 
                             focus:shadow-outline ${globalContext.interests === item.name ? "highlight" : ""}`}
-                            key={item.id} onClick={() => handleClickB(item.name)}> 
-                            {item.name}
+                                key={item.id} onClick={() => handleClickB(item.name)}>
+                                {item.name}
                             </button>
                         ))}
                     </div>
@@ -65,8 +63,8 @@ const Events = ({eventsData, interestsData, suggestionData}) => {
                             <button className={`h-10 w-28 m-2 text-xs text-bd 
                             border border-ft rounded-xs 
                             focus:shadow-outline ${globalContext.suggestion === e.name ? "highlight" : ""}`}
-                            key={e.id} onClick={() => handleClickC(e.name)}> 
-                            {e.name}
+                                key={e.id} onClick={() => handleClickC(e.name)}>
+                                {e.name}
                             </button>
                         ))}
                     </div>
@@ -77,7 +75,7 @@ const Events = ({eventsData, interestsData, suggestionData}) => {
                 </div>
             </section>
         </main>
-     );
+    );
 }
- 
+
 export default Events;

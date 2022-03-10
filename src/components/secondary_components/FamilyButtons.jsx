@@ -9,7 +9,6 @@ const FamilyButtons = ({ familyData }) => {
     globalContext.setSelectFamily(button);
   };
 
-
   return (
     <div className="flex flex-row flex-wrap">
       {familyData.map((item) => (
