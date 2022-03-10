@@ -13,7 +13,7 @@ const FamilyButtons = ({ familyData }) => {
     <div className="flex flex-row flex-wrap">
       {familyData.map((item) => (
         <button
-          className={`h-8 w-90 m-1 text-xs text-bd border border-ft rounded-xs 
+          className={`h-8 w-auto p-2 m-2 text-xs text-bd border border-ft rounded-xs 
                       focus:shadow-outline ${globalContext.selectFamily === item.name ? "highlight" : ""}`}
           key={item.id}
           onClick={() => handleClick(item.name)}
