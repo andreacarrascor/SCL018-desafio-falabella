@@ -1,6 +1,5 @@
 import profile_icon from '../../img/profile_icon.png'
 import profile_info from '../../img/profile_info.png'
-// import Vector from '../../img/Vector.png';
 
 const MenuProfile = () => {
     return ( 
