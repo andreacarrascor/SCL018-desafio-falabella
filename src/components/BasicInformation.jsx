@@ -8,7 +8,7 @@ import ButtonSendProfile from "./secondary_components/ButtonSendProfile";
 import SexButtons from "./secondary_components/SexButtons";
 import Date from "./secondary_components/Date";
 import Events from "./Events";
-import fav_people from '../img/icons/fav_people.png'
+import fav_people from "../img/icons/fav_people.png";
 
 
 const BasicInformation = () => {
