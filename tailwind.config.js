@@ -19,8 +19,8 @@ module.exports = {
       sb: '#FBF3EE',
       bc: '#E7E7E7',
       rg: '#4A4A4A',
-      gd: '#888888'
-
+      gd: '#888888',
+      gr: '#bbbbbb'
     },
     borderRadius: {
       'sr' : '35px',
@@ -40,6 +40,7 @@ module.exports = {
       height: {
         '563': '563px',
         '391': '391px',
+        '320': '320px',
         '278': '278px',
         '252': '252px',
         '70' : '70px',

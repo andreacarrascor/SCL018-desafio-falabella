@@ -13,7 +13,9 @@ const Date = () => {
 
     return ( 
         <input
-        type="date"
+        type="text"
+        className="ml-2 px-4 w-36"
+        placeholder="00 / 00 / 0000"
         id="start"
         name="trip-start"
         value={globalContext.selectDate}
