@@ -12,8 +12,9 @@
     grid-template-areas: 'header'
                          'nav'
                          'welcome'
-                         'aside'
-                         ;                  
+                         'profile'
+                         ;
+    align-items: center;
 }
 
 .header {
