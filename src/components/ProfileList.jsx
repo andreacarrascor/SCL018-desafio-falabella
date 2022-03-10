@@ -21,9 +21,9 @@ const ProfileList = () => {
             }
         );
     }, []);
-  
+
     return users.length > 0 ? (
-        <article className="flex flex-col h-439 ">
+        <article className="flex flex-col h-screen pt-6">
             <h1 className="text text-2xl ml-8 mb-7 text-bd">Mis personas favoritas</h1>
             <h2 className="text text-xl ml-8 mb-3 text-bd">
                 Revisa los eventos que tienen:
@@ -45,9 +45,9 @@ const ProfileList = () => {
 //                     ></input> */}
                     <div
                         key={item.id}
-                        className="flex flex-row justify-between w-810"
+                        className="flex flex-row justify-between w-810 mx-5"
                     >
-                        <div>
+                        <div className="">
                             <p className="tex text-sm font-bold text-bd">{item.name}</p>
                             <p className="tex text-sm text-gd">{item.events}</p>
                         </div>
