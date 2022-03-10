@@ -2,7 +2,6 @@ import { Context } from "../../context/Context";
 import { useContext } from "react";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
-import { getDefaultNormalizer } from "@testing-library/react";
 
 const ButtonSendProfile = () => {
     const globalContext = useContext(Context);
