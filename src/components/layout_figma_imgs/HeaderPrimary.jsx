@@ -6,7 +6,7 @@ import cart from '../../img/cart.png'
 
 const HeaderPrimary = () => {
     return (
-        <header className="flex justify-between items-center header w-screen h-70 bg-header">
+        <header className="flex justify-between items-center header sm:w-screen h-70 bg-header">
             <div className=''>
                 <img src={logo_f} width="243" height="70" alt="logo f.com" />
             </div>

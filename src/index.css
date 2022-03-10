@@ -11,8 +11,8 @@
     display: grid;
     grid-template-areas:'header'
                         'nav '
-                        'welcome'
                         'profile';
+    grid-template-columns: auto;
 }
 
 .header {
@@ -25,17 +25,19 @@
 
 .welcome {
     grid-area: welcome;
+    display: none;
 }
 
 .aside {
     grid-area: aside;
+    display:none;
 }
 
 .profile {
     grid-area: profile;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
     .container {
         display: grid;
         grid-template-areas: 'header header header header'
@@ -45,6 +47,9 @@
                              ;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         
+    }
+    .aside, .welcome {
+        display:block;
     }
 }
 

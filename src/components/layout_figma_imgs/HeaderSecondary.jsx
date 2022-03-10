@@ -3,7 +3,7 @@ import links from '../../img/links.png'
 
 const HeaderSecondary = () => {
     return (
-        <nav className="flex items-center justify-around nav shadow-bt w-screen h-12">
+        <nav className="flex items-center justify-around nav shadow-bt sm:w-screen h-12">
             <div>
                 <img src={geofinder} width="203" height="40" alt="geofinder" />
             </div>

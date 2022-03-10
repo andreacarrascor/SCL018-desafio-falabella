@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import db from "../FirebaseConfig";
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import DeleteButton from "./secondary_components/DeleteButton";
+import { Link } from "react-router-dom";
 
 const ProfileList = () => {
     const [users, setUsers] = useState([]);
@@ -22,12 +23,12 @@ const ProfileList = () => {
     }, []);
 
     return users.length > 0 ? (
-        <article className="flex flex-col w-939 h-439 ">
+        <article className="flex flex-col h-439 ">
             <h1 className="text text-2xl ml-8 mb-7 text-bd">Mis personas favoritas</h1>
             <h2 className="text text-xl ml-8 mb-3 text-bd">
                 Revisa los eventos que tienen:
             </h2>
-            <div className="flex flex-row w-873 items-center mb-2 mx-auto">
+            <div className="flex flex-row w-873 items-center mb-2 ml-5">
                 <input
                     type="checkbox"
                     name="controlled"
@@ -36,7 +37,7 @@ const ProfileList = () => {
                 <label className="text text-sm text-rg">Seleccionar todo</label>
             </div>
             {users.map((item) => (
-                <section className="flex flex-row border border-bc rounded-xs w-873 h-20  mx-auto items-center mb-2">
+                <section className="flex flex-row border border-bc rounded-xs h-20 m-2 mx-8 items-center mb-2">
                     <input
                         type="checkbox"
                         name="controlled"
@@ -44,7 +45,7 @@ const ProfileList = () => {
                     ></input>
                     <div
                         key={item.id}
-                        className="flex flex-row justify-between items-center w-810"
+                        className="flex flex-row justify-between w-810"
                     >
                         <div>
                             <p className="tex text-sm font-bold text-bd">{item.name}</p>
@@ -55,11 +56,21 @@ const ProfileList = () => {
                     </div>
                 </section>
             ))}
+            <div className="flex justify-end w-auto mx-4">
+                <Link to="/basicInformation">
+                    <button className="h-10 w-243 m-4 text-sl bg-og rounded-3xl">Crear Nuevo Perfil</button>
+                </Link>
+            </div>
         </article>
     ) : (
-        <h1 className="text-fp">
-            Comienza a crear el perfil de tu persona favorita
-        </h1>
+        <section className="profile flex flex-col justify-center h-563 w-auto mt-6 ml-5 mr-20">
+            <h1 className="text-fp">
+                Comienza a crear el perfil de tu persona favorita
+            </h1>
+            <Link to="/basicInformation">
+                <button className="h-10 w-243 m-4 text-sl bg-og rounded-3xl">Crear Nuevo Perfil</button>
+            </Link>
+        </section>
     );
 };
 
