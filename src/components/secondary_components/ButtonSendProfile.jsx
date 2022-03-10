@@ -33,12 +33,36 @@ const ButtonSendProfile = () => {
         confirmButtonColor: "#FF6200",
         iconColor: "#FF6200",
       });
-    } else {
+    } else if (globalContext.events === "") {
+      MySwal.fire({
+        text: "Completar la celebración",
+        icon: "error",
+        confirmButtonColor: "#FF6200",
+        iconColor: "#FF6200",
+      });
+    }else if (globalContext.interests.length <= 0) {
+      MySwal.fire({
+        text: "Completa al menos 1 campo en los intereses",
+        icon: "error",
+        confirmButtonColor: "#FF6200",
+        iconColor: "#FF6200",
+      });
+    }else if (globalContext.suggestion === ""){
+      MySwal.fire({
+        text: "Completa las sugerencias",
+        icon: "error",
+        confirmButtonColor: "#FF6200",
+        iconColor: "#FF6200",
+      });
+    }else {
       globalContext.newProfile();
       globalContext.setFavoritePerson("");
       globalContext.setSelectFamily("");
       globalContext.setSelectSex("");
       globalContext.setSelectDate("");
+      globalContext.setEvents("");
+      globalContext.setInterests("");
+      globalContext.setSuggestion("");
       MySwal.fire({
         icon: "success",
         title: "Perfil creado",
