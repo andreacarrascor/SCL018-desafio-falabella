@@ -48,7 +48,7 @@ const ProfileList = () => {
           >
             <div>
               <p className="tex text-sm font-bold text-bd">{item.name}</p>
-              <p className="tex text-sm text-gd">{item.family}</p>
+              <p className="tex text-sm text-gd">{item.events}</p>
             </div>
             <DeleteButton 
             id={item.id}/>
