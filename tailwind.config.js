@@ -16,7 +16,8 @@ module.exports = {
       sl: '#F8FAFC',
       fp: '#68717D',
       ev: '#495867',
-      sb: '#FBF3EE'
+      sb: '#FBF3EE',
+      gr: '#bbbbbb'
 
     },
     borderRadius: {
@@ -36,6 +37,7 @@ module.exports = {
       height: {
         '563': '563px',
         '391': '391px',
+        '320': '320px',
         '278': '278px',
         '252': '252px',
         '70' : '70px',
