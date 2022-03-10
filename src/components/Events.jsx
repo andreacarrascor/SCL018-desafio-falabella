@@ -1,6 +1,7 @@
 import Union from '../img/Union.png'
 import { Context } from "../context/Context";
 import { useContext } from "react";
+import Swal from "sweetalert2";
 
 const Events = ({ eventsData, interestsData, suggestionData }) => {
     const globalContext = useContext(Context);
@@ -16,13 +17,26 @@ const Events = ({ eventsData, interestsData, suggestionData }) => {
         globalContext.setSuggestion(button);
     };
 
-    const deleteForm = () => {
-        if (window.confirm("¿Desea borrar los campos?")) {
+      const deleteForm = () => {
+        Swal.fire({
+          title: "¿Deseas borrar los campos?",
+          icon: "warning",
+          iconColor: "#F7B500",
+          showCancelButton: true,
+          confirmButtonColor: "#FF6200",
+          cancelButtonText: "No",
+          cancelButtonColor: "#495867",
+          reverseButtons: true,
+          color: "#4A4A4A",
+          confirmButtonText: "Sí, borrar",
+        }).then((result) => {
+          if (result.isConfirmed) {
             globalContext.setEvents("");
             globalContext.setInterests("");
             globalContext.setSuggestion("");
-        }
-    };
+          }
+        });
+      };
 
     return (
         <main>
