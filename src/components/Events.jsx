@@ -16,8 +16,6 @@ const Events = ({ eventsData, interestsData, suggestionData }) => {
         } else {
             globalContext.setInterests([...globalContext.interests, button])
         }
-        
-        
     };
 
     const handleClickC = (button) => {

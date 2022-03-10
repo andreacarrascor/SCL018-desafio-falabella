@@ -23,31 +23,31 @@ const ProfileList = () => {
     }, []);
   
     return users.length > 0 ? (
-        <article className="flex flex-col h-439 ">
+        <article className="flex flex-col h-439 -mt-20">
             <h1 className="text text-2xl ml-8 mb-7 text-bd">Mis personas favoritas</h1>
             <h2 className="text text-xl ml-8 mb-3 text-bd">
                 Revisa los eventos que tienen:
             </h2>
-//             <div className="flex flex-row w-873 items-center mb-2 ml-5">
+{/* //             <div className="flex flex-row w-873 items-center mb-2 ml-5">
 //                 <input
 //                     type="checkbox"
 //                     name="controlled"
 //                     className="ml ml-3 mr-3 w-5 h-5 rounded-xs"
 //                 ></input>
 //                 <label className="text text-sm text-rg">Seleccionar todo</label>
-//             </div>
+//             </div> */}
             {users.map((item) => (
                 <section className="flex flex-row border border-bc rounded-xs h-20 m-2 mx-8 items-center mb-2">
-//                     <input
+{/* //                     <input
 //                         type="checkbox"
 //                         name="controlled"
 //                         className="ml ml-3 mr-3 w-5 h-5 rounded-xs"
-//                     ></input>
+//                     ></input> */}
                     <div
                         key={item.id}
-                        className="flex flex-row justify-between w-810"
+                        className="flex flex-row justify-between w-810 mx-auto"
                     >
-                        <div>
+                        <div className="">
                             <p className="tex text-sm font-bold text-bd">{item.name}</p>
                             <p className="tex text-sm text-gd">{item.events}</p>
                         </div>
