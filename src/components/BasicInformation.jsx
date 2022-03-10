@@ -12,12 +12,12 @@ import fav_people from "../img/icons/fav_people.png";
 
 
 const BasicInformation = () => {
-  const globalContext = useContext(Context);
-  const familyData = data.family;
-  const sexData = data.sex;
-  const eventsData = data.events;
-  const interestsData = data.interests;
-  const suggestionData = data.suggestion;
+	const globalContext = useContext(Context);
+	const familyData = data.family;
+	const sexData = data.sex;
+	const eventsData = data.events;
+	const interestsData = data.interests;
+	const suggestionData = data.suggestion;
 
 	//Función para capturar el nombre
 	const onChange = (e) => {
@@ -28,7 +28,7 @@ const BasicInformation = () => {
 	};
 
 	return (
-		<main className="profile flex flex-col w-auto mt-5 mr-20">
+		<main className="profile flex flex-col w-auto mt-6 ml-5 mr-20">
 			<section className="shadow-am w-full mr-20">
 				<h1 className="text-2xl mt-6 ml-8 pb-2">Mi persona favorita</h1>
 				<Link to="/" className="text-fp underline ml-8">Volver a personas favoritas</Link>
@@ -59,10 +59,10 @@ const BasicInformation = () => {
 				</div>
 			</section>
 			<section>
-				{globalContext.state ? <Events 
-        eventsData={eventsData} 
-        interestsData={interestsData}
-        suggestionData={suggestionData}/> : <AddEvent />}
+				{globalContext.state ? <Events
+					eventsData={eventsData}
+					interestsData={interestsData}
+					suggestionData={suggestionData} /> : <AddEvent />}
 			</section>
 			<ButtonSendProfile />
 		</main>
