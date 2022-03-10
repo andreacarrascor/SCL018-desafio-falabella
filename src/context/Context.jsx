@@ -23,13 +23,13 @@ const Provider = ({children}) => {
     //Estado global para cambiar el estado del form de evento
     const [state, setState] = useState(false)
 
-    //estado global que cambia el boton de evento
+    //estado global que captura el valor del evento
     const [events, setEvents] = useState("");
 
-    //estado global que cambia el boton de intereses
+    //estado global que captura el valor de los intereses
     const [interests, setInterests] = useState("")
 
-    //estado global para el boton de sugerencias
+    //estado global que captura el valor de sugerencias
     const [suggestion, setSuggestion] = useState("");
 
     //Funcion para cambiar el estado y mostrar el form de evento
@@ -50,7 +50,10 @@ const Provider = ({children}) => {
                 name: favoritePerson,
                 family: selectFamily,
                 sex: selectSex,
-                date: selectDate
+                date: selectDate,
+                events: events,
+                interests: interests,
+                suggestion: suggestion
 
             });
         } catch(error){
@@ -72,9 +75,12 @@ const Provider = ({children}) => {
         state, 
         setState,
         clickAddEvent,
-        interests, setInterests,
-        events, setEvents,
-        suggestion, setSuggestion
+        interests, 
+        setInterests,
+        events, 
+        setEvents,
+        suggestion, 
+        setSuggestion
 
     };
 
