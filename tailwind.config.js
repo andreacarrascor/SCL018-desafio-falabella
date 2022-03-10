@@ -16,13 +16,17 @@ module.exports = {
       sl: '#F8FAFC',
       fp: '#68717D',
       ev: '#495867',
-      sb: '#FBF3EE'
+      sb: '#FBF3EE',
+      bc: '#E7E7E7',
+      rg: '#4A4A4A',
+      gd: '#888888'
 
     },
     borderRadius: {
       'sr' : '35px',
       '3xl': '24px',
-      'xs': '4px'
+      'xs': '4px',
+      's': '20px'
     },
     extend: {
       fontFamily: {
@@ -40,6 +44,7 @@ module.exports = {
         '252': '252px',
         '70' : '70px',
         '46' : '46px',
+        '439': '439px'
 
       },
       width: {
@@ -50,7 +55,9 @@ module.exports = {
         '608': '608px',
         '321': '321px',
         '295': '295px',
-        '243': '243px'
+        '243': '243px',
+        '873': '873px',
+        '810': '810px'
       },
       margin: {
         '419': '419px',
