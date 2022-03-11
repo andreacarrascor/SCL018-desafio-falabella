@@ -1,7 +1,7 @@
 # SCL018 Desafío Falabella
 
 ## 🌎Antecedentes de la empresa
-Falabella.com es la plataforma de retail más grande de Latinoamérica, con presencia a través de grandes tiendas, tanto físicas como online, donde se comercializa productos para uso personal y del hogar, contando con fuertes marcas propias, marcas exclusivas internacionales, además de marcas locales y de segunda generación.
+Falabella.com es la plataforma de marketplace más grande de Latinoamérica, con presencia a través de grandes tiendas, tanto físicas como online, donde se comercializa productos para uso personal y del hogar, contando con fuertes marcas propias, marcas exclusivas internacionales, además de marcas locales y de segunda generación.
 
 ## 🚀El Desafío
 En la app de Falabella-com, crear una nueva sección de personalización dentro de “Mi Cuenta” donde el usuario tenga la oportunidad de crear “Mis personas favoritas” con diferentes tipos de perfiles con gustos e intereses para cada uno.
